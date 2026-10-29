@@ -22,6 +22,7 @@
   <nav>
     <a href="#screens">Screens</a>
     <a href="#private">Privacy</a>
+    <a href="https://github.com/Fybre/dosebook">GitHub</a>
     <a href="#get" class="pill">Get it</a>
   </nav>
 </header>
@@ -58,7 +59,10 @@
       <button role="tab" aria-selected="false" data-tab="mac">Mac</button>
     </div>
 
-    <div class="rail" data-panel="iphone">
+    <div class="rails">
+    <button class="arrow prev" aria-label="Scroll left" hidden>&#8249;</button>
+    <button class="arrow next" aria-label="Scroll right">&#8250;</button>
+    <div class="rail" data-panel="iphone" tabindex="0" aria-label="iPhone screens">
       <figure><div class="phone"><img loading="lazy" src="assets/img/iphone-now.webp" alt="Now" width="760" height="1653"></div><figcaption>Now</figcaption></figure>
       <figure><div class="phone"><img loading="lazy" src="assets/img/iphone-chart.webp" alt="Circulating now" width="760" height="1653"></div><figcaption>Levels</figcaption></figure>
       <figure><div class="phone"><img loading="lazy" src="assets/img/iphone-plan.webp" alt="Plan" width="760" height="1653"></div><figcaption>Plan</figcaption></figure>
@@ -67,17 +71,18 @@
       <figure><div class="phone"><img loading="lazy" src="assets/img/iphone-calc.webp" alt="Calculator" width="760" height="1653"></div><figcaption>Calculator</figcaption></figure>
     </div>
 
-    <div class="rail wide" data-panel="ipad" hidden>
+    <div class="rail wide" data-panel="ipad" tabindex="0" aria-label="iPad screens" hidden>
       <figure><div class="ipad"><img loading="lazy" src="assets/img/ipad-now.webp" alt="Now on iPad" width="1800" height="1350"></div><figcaption>Now</figcaption></figure>
       <figure><div class="ipad"><img loading="lazy" src="assets/img/ipad-stock.webp" alt="Stock on iPad" width="1800" height="1350"></div><figcaption>Stock</figcaption></figure>
       <figure><div class="ipad"><img loading="lazy" src="assets/img/ipad-log.webp" alt="Log on iPad" width="1800" height="1350"></div><figcaption>Log</figcaption></figure>
     </div>
 
-    <div class="rail wide" data-panel="mac" hidden>
+    <div class="rail wide" data-panel="mac" tabindex="0" aria-label="Mac screens" hidden>
       <figure><div class="mac"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/img/mac-now.webp" alt="Now on Mac" width="1280" height="860"></div><figcaption>Now</figcaption></figure>
       <figure><div class="mac"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/img/mac-plan.webp" alt="Plan on Mac" width="1280" height="860"></div><figcaption>Plan</figcaption></figure>
       <figure><div class="mac"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/img/mac-stock.webp" alt="Stock on Mac" width="1280" height="860"></div><figcaption>Stock</figcaption></figure>
       <figure><div class="mac"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/img/mac-log.webp" alt="Log table on Mac" width="1280" height="860"></div><figcaption>Log, as a table</figcaption></figure>
+    </div>
     </div>
   </section>
 
@@ -85,9 +90,10 @@
     <h2>Private by design.</h2>
     <ul>
       <li><b>No account.</b> Nothing to sign up for.</li>
-      <li><b>No server.</b> No analytics, no tracking.</li>
+      <li><b>No server.</b> No analytics, no ads, no tracking.</li>
       <li><b>Your iCloud.</b> Sync between your devices, in your own private database.</li>
       <li><b>Read-only Health.</b> Weight, sleep and heart rate come in. Nothing goes out.</li>
+      <li class="oss"><a href="https://github.com/Fybre/dosebook"><b>Open source.</b> MIT licensed. Read every line on GitHub.</a></li>
     </ul>
     <a class="more" href="privacy.html">Read the privacy policy</a>
   </section>
@@ -104,7 +110,7 @@
 
 <footer>
   <p>Dosebook is not medical advice and cannot check what is in your vial. Figures are estimates from a simple model and published half-lives, not blood tests. Talk to whoever looks after your health.</p>
-  <p class="small">Built on the open-source <a href="https://github.com/ArunNGun/Bench">Bench</a> by Arun. &middot; <a href="privacy.html">Privacy</a> &middot; &copy; 2026 Dosebook</p>
+  <p class="small">Built on the open-source <a href="https://github.com/ArunNGun/Bench">Bench</a> by Arun. &middot; <a href="privacy.html">Privacy</a> &middot; <a href="https://github.com/Fybre/dosebook">Source on GitHub</a> &middot; MIT &middot; &copy; 2026 Dosebook</p>
 </footer>
 
 <script src="script.js"></script>
