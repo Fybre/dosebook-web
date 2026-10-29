@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dosebook: a private dose tracker for iPhone, iPad and Mac</title>
+<meta name="description" content="Plan protocols, mix vials, log doses and see what is on board. No account, no server, no analytics.">
+<meta name="theme-color" content="#0b1112">
+<meta property="og:title" content="Dosebook">
+<meta property="og:description" content="Your protocols, vials and doses, in one private place.">
+<meta property="og:image" content="https://dosebook.app/assets/img/og.webp">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<script>document.documentElement.className = "js"</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top"><img src="assets/img/icon-256.png" alt="" width="28" height="28">Dosebook</a>
+  <nav>
+    <a href="#screens">Screens</a>
+    <a href="#private">Privacy</a>
+    <a href="#get" class="pill">Get it</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <h1>Your protocols, vials and doses.<br><span class="accent">In one private place.</span></h1>
+    <p class="lead">Plan, mix, log, and see what is on board.</p>
+    <div class="cta">
+      <a class="btn primary" href="#get">Download for Mac</a>
+      <a class="btn" href="#get">iPhone &amp; iPad</a>
+    </div>
+
+    <div class="stage" aria-label="Dosebook on Mac, iPad and iPhone">
+      <figure class="mac"><div class="bar"><i></i><i></i><i></i></div><img src="assets/img/mac-now.webp" alt="The Now screen on Mac" width="1280" height="860"></figure>
+      <figure class="ipad"><img src="assets/img/ipad-now.webp" alt="The Now screen on iPad" width="1800" height="1350"></figure>
+      <figure class="phone"><img src="assets/img/iphone-chart.webp" alt="Estimated levels on iPhone" width="760" height="1653"></figure>
+    </div>
+  </section>
+
+  <section class="features" id="features">
+    <article class="reveal"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h13"/></svg><h3>Plan</h3><p>Schedules, titration, blends, pauses.</p></article>
+    <article class="reveal"><svg viewBox="0 0 24 24"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 2 3h10a2 2 0 0 0 2-3l-5-9V3"/></svg><h3>Stock</h3><p>Vials, water, and what is left.</p></article>
+    <article class="reveal"><svg viewBox="0 0 24 24"><path d="M3 17l4-4 4 3 5-8 5 5"/></svg><h3>Levels</h3><p>What is circulating now.</p></article>
+    <article class="reveal"><svg viewBox="0 0 24 24"><path d="M5 19L19 5M14 5h5v5M5 14v5h5"/></svg><h3>Calculator</h3><p>Where to draw to.</p></article>
+    <article class="reveal"><svg viewBox="0 0 24 24"><path d="M5 4h14v16H5zM9 9h6M9 13h6M9 17h3"/></svg><h3>Log</h3><p>Missed doses, sites, search.</p></article>
+    <article class="reveal"><svg viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0-6 6v4l-2 3h16l-2-3V9a6 6 0 0 0-6-6zM10 19a2 2 0 0 0 4 0"/></svg><h3>Reminders</h3><p>Discreet, and you can log from them.</p></article>
+  </section>
+
+  <section class="screens" id="screens">
+    <div class="tabs" role="tablist" aria-label="Choose a device">
+      <button role="tab" aria-selected="true" data-tab="iphone">iPhone</button>
+      <button role="tab" aria-selected="false" data-tab="ipad">iPad</button>
+      <button role="tab" aria-selected="false" data-tab="mac">Mac</button>
+    </div>
+
+    <div class="rail" data-panel="iphone">
+      <figure><div class="phone"><img loading="lazy" src="assets/img/iphone-now.webp" alt="Now" width="760" height="1653"></div><figcaption>Now</figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/img/iphone-chart.webp" alt="Circulating now" width="760" height="1653"></div><figcaption>Levels</figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/img/iphone-plan.webp" alt="Plan" width="760" height="1653"></div><figcaption>Plan</figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/img/iphone-stock.webp" alt="Stock" width="760" height="1653"></div><figcaption>Stock</figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/img/iphone-log.webp" alt="Log" width="760" height="1653"></div><figcaption>Log</figcaption></figure>
+      <figure><div class="phone"><img loading="lazy" src="assets/img/iphone-calc.webp" alt="Calculator" width="760" height="1653"></div><figcaption>Calculator</figcaption></figure>
+    </div>
+
+    <div class="rail wide" data-panel="ipad" hidden>
+      <figure><div class="ipad"><img loading="lazy" src="assets/img/ipad-now.webp" alt="Now on iPad" width="1800" height="1350"></div><figcaption>Now</figcaption></figure>
+      <figure><div class="ipad"><img loading="lazy" src="assets/img/ipad-stock.webp" alt="Stock on iPad" width="1800" height="1350"></div><figcaption>Stock</figcaption></figure>
+      <figure><div class="ipad"><img loading="lazy" src="assets/img/ipad-log.webp" alt="Log on iPad" width="1800" height="1350"></div><figcaption>Log</figcaption></figure>
+    </div>
+
+    <div class="rail wide" data-panel="mac" hidden>
+      <figure><div class="mac"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/img/mac-now.webp" alt="Now on Mac" width="1280" height="860"></div><figcaption>Now</figcaption></figure>
+      <figure><div class="mac"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/img/mac-plan.webp" alt="Plan on Mac" width="1280" height="860"></div><figcaption>Plan</figcaption></figure>
+      <figure><div class="mac"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/img/mac-stock.webp" alt="Stock on Mac" width="1280" height="860"></div><figcaption>Stock</figcaption></figure>
+      <figure><div class="mac"><div class="bar"><i></i><i></i><i></i></div><img loading="lazy" src="assets/img/mac-log.webp" alt="Log table on Mac" width="1280" height="860"></div><figcaption>Log, as a table</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="private" id="private">
+    <h2>Private by design.</h2>
+    <ul>
+      <li><b>No account.</b> Nothing to sign up for.</li>
+      <li><b>No server.</b> No analytics, no tracking.</li>
+      <li><b>Your iCloud.</b> Sync between your devices, in your own private database.</li>
+      <li><b>Read-only Health.</b> Weight, sleep and heart rate come in. Nothing goes out.</li>
+    </ul>
+    <a class="more" href="privacy.html">Read the privacy policy</a>
+  </section>
+
+  <section class="get" id="get">
+    <img src="assets/img/icon-256.png" alt="" width="96" height="96">
+    <h2>Get Dosebook</h2>
+    <div class="cta">
+      <span class="btn primary soon">Mac &middot; coming soon</span>
+      <span class="btn soon">iPhone &amp; iPad &middot; coming soon</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Dosebook is not medical advice and cannot check what is in your vial. Figures are estimates from a simple model and published half-lives, not blood tests. Talk to whoever looks after your health.</p>
+  <p class="small">Built on the open-source <a href="https://github.com/ArunNGun/Bench">Bench</a> by Arun. &middot; <a href="privacy.html">Privacy</a> &middot; &copy; 2026 Dosebook</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
